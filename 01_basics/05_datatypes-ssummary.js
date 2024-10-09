@@ -25,3 +25,21 @@ const myFunction = function(){
 // number => number
 // string => string
 // symbol => symbol
+
+
+//++++++++++++++++++++++++ Memory Allocation ++++++++++++++++++++
+// stack(Primitive) and heap(Non-Primitive)
+let username = "aditya0714"
+let usernameref = username
+usernameref = "swati0924"
+console.log(username);
+console.log(usernameref);
+
+let userOne = {
+    emailId : "aditya@microsoft.com",
+    password : 34523,
+}
+let userTwo = userOne
+userTwo.emailId = "aditya@google.com"
+console.log(userOne.emailId);
+console.log(userTwo.emailId);
