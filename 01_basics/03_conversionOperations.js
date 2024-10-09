@@ -17,3 +17,19 @@ console.log(isLoggedIsBoolean)
 // 1 => true
 // "" => false 
 // "aditya" => true
+
+//**************************Operations***************************
+let value = 3
+let negvalue = -value
+console.log(negvalue)
+console.log(2**3)//it means, 2 pow 3
+
+console.log("1"+2)// 12
+console.log(1+"2")// 12 
+console.log("1"+2+2)// 122
+console.log(1+2+"2")// 32
+
+
+console.log(+true)// 1
+// console.log(true+) // error
+console.log(+"") // 0
