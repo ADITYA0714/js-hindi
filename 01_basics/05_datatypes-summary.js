@@ -1,8 +1,10 @@
-// Primitive
+ // Primitive
 // 7 types
 // number,string,boolean,null,undefined,symbol,bigInt
 const isSymbol = Symbol('123')
 const anotherSymbol = Symbol('123')//this is symbol is assigned and both isSymbol and anotherSymbol are unique.
+//To check the above statement lets compare:
+console.log(isSymbol == anotherSymbol);
 
 const biggInt = 562467352n;// adding n at last make it bigInt its not neccesary though.
 
@@ -25,7 +27,13 @@ const myFunction = function(){
 // number => number
 // string => string
 // symbol => symbol
+//bigInt => undefined
+//function => function-object(but when we console.log it gives function)
+//object =>object
+//array => object
 
+console.log(typeof myObj);
+console.log(typeof myArray);
 
 //++++++++++++++++++++++++ Memory Allocation ++++++++++++++++++++
 // stack(Primitive) and heap(Non-Primitive)
