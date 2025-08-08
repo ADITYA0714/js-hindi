@@ -1,3 +1,4 @@
+//for in
 //iterating objects
 const myObject = {
     js: 'javascript',
