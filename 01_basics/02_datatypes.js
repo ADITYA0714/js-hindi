@@ -1,6 +1,7 @@
 "use strict";//treats all JS as newer version
 
 // alert(3+3)//we are using Nodejs not browser
+//js engine is in browser 
 
 // number => 2 to power 53
 let age = 18
