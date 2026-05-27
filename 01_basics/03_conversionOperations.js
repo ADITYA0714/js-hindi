@@ -1,5 +1,6 @@
 let score = "23adc"
 
+
 // console.log(typeof score)
 // console.log(typeof (score))//passed as method
 
@@ -7,7 +8,7 @@ let valueInNumber = Number(score);//to convert first alphabet should be capital
 
 // console.log(typeof valueInNumber)//isse type to convert hojaega number mei but not necessary wo value number hi ho like 32abc 
 
-// console.log(valueInNumber)//after conversion we check actual value
+// console.log(valueInNumber)//after conversion we check actual value -> NaN because alphabet get converted into number datatype in js
 
 //keep the value of score as null,undefiend,true,false and also check the output
 
@@ -21,11 +22,11 @@ let valueInNumber = Number(score);//to convert first alphabet should be capital
 
 let isLogged = "aditya";
 let isLoggedIsBoolean = Boolean(isLogged)
-console.log(typeof isLoggedIsBoolean)
-console.log(isLoggedIsBoolean)
-// // 1 => true
-// // "" => false 
-// // "aditya" => true
+// console.log(typeof isLoggedIsBoolean)
+// console.log(isLoggedIsBoolean)
+// 1 => true
+// "" => false 
+// "aditya" => true
 
 // //**************************Operations***************************
 let value = 3
@@ -33,7 +34,7 @@ let negvalue = -value
 // console.log(negvalue)
 // console.log(2**3)//it means, 2 pow 3 
 
-// console.log("1"+2)// 12
+console.log("1"+2)// 12
 // console.log(1+"2")// 12 
 // console.log("1"+2+2)// 122
 // console.log(1+2+"2")// 32
@@ -60,4 +61,4 @@ let negvalue = -value
 // const b = ++a;
 
 // console.log(`a:${a}, b:${b}`);
-// // Expected output: "a:4, b:4"
+// Expected output: "a:4, b:4"

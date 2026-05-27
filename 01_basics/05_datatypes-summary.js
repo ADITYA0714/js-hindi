@@ -1,4 +1,4 @@
- // Primitive
+// Primitive - datatypes are call by value mean when we copy them we do not get reference of the data rather we get copy of the data
 // 7 types
 // number,string,boolean,null,undefined,symbol,bigInt
 const isSymbol = Symbol('123')
@@ -12,14 +12,24 @@ const biggInt = 562467352n;// adding n at last make it bigInt its not neccesary 
 // Reference(Non Primitive)
 // Array,Object,Functions
 
-const myArray = ["Aditya","Vipasha","Mundeer"];
+const myArray = ["Aditya","Vimarsh","Mundeer"];
+for(const c of myArray){
+    console.log(c);
+}
+myArray.forEach(c => console.log(c));
+
+
 const myObj = {
     name:"ashad",
     age:34,
 }
+console.log(myObj.name);
+
+
 const myFunction = function(){
     console.log("Namaste India");
 }
+myFunction();
 
 //Points to remember(typeof)
 // null => Object
