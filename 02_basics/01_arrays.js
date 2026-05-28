@@ -8,7 +8,7 @@ const arr2 = new Array(1 ,2 ,3, 4, 5)
 
 //Arrays(Methods)
 arr2.push(2)
-arr2.push(7)
+arr2.push(7) 
 // console.log(arr2);
 
 arr2.pop()
@@ -32,11 +32,10 @@ const newArr = arr.join();//converts array to string
 
 //Slice and Splice
 console.log("A ",arr)
-
 const myn1 = arr.slice(1,3);
 console.log(myn1)
-console.log("B",arr);
 
+console.log("B",arr);
 const myn2 = arr.splice(1,3)//it manipulates original array(make changes in it that is removes them from original array), also it includes uptil element-interger which is 3
 console.log(myn2)
 console.log("C",arr);

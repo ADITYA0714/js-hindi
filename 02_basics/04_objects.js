@@ -18,7 +18,7 @@ const regularUser = {
 }
 
 // console.log(regularUser.fullname);
-// console.log(regularUser?.fullname);//this ?. here is called optional chaning it helps suppose some key is not there in object it will atleast not return error
+// console.log(regularUser?.fullname.userfullname.firstname);//this ?. here is called optional chaning it helps suppose some key is not there in object it will atleast not return error
 
 
 const obj1 = {1:"a",2:"b"}
@@ -29,8 +29,8 @@ const obj4 = {5:"a",6:"b"}
 const obj3 = {...obj1,...obj2,...obj4};//way to join two object
 const objcombined = Object.assign({},obj1,obj2,obj4);//alt way to join two object
 
-console.log(obj3);
-console.log(objcombined);
+// console.log(obj3);
+// console.log(objcombined);
 
 
 const users = [
@@ -46,13 +46,13 @@ const users = [
 ]
 
 users[1].email //to access array of object
-console.log(tinderUser);
-console.log(Object.keys(tinderUser));//return in form of array so easy to access and use
-console.log(Object.values(tinderUser));
-console.log(Object.entries(tinderUser));//gives both key as well as values
+// console.log(tinderUser);
+// console.log(Object.keys(tinderUser));//return in form of array so easy to access and use
+// console.log(Object.values(tinderUser));
+// console.log(Object.entries(tinderUser));//gives both key as well as values
 
 
-console.log(tinderUser.hasOwnProperty('isLoggedIn'));
+// console.log(tinderUser.hasOwnProperty('isLoggedIn'));
 
 const course = {
     coursename: "Js in hindi",
@@ -60,7 +60,7 @@ const course = {
     courseInstructor : "HiteshSir"
 }
 
-//course.courseInstructor
+//course.courseInstructor - this is how to access property of an object
 
 const {courseInstructor : instructor} = course;//destructuring of object
 

@@ -1,7 +1,7 @@
  const marvel_heros = ["Thor","Ironman","Spiderman"]
  const dc_heros = ["Superman","flash","batman"]
 
-//  marvel_heros.push(dc_heros);
+ marvel_heros.push(dc_heros);
  
 //  console.log(marvel_heros);
 //  console.log(marvel_heros[3][1]);
@@ -25,22 +25,28 @@ const all_new_heros = [...marvel_heros,...dc_heros]
 const another_array = [1,2,3,[4,5,6],7,[6,7,[4,5]]] 
 
 const real_another_array = another_array.flat(Infinity);
-console.log(real_another_array);
+// const real_another_array = another_array.flat(1);
+
+// console.log(real_another_array);
 //flat method destructure all the sub-array any number of array inside array into one new single array
 
 
 
 // console.log(Array.isArray("Aditya"));//check whether array or not
 // console.log(Array.from("Aditya"));//This convert any input into array
-console.log("Aditya","Swati");
-console.log(typeof("Aditya","Swati"));
+// console.log("Aditya","Swati");
+// console.log(typeof("Aditya","Swati"));
 
 
-console.log(Array.from({name:"Aditya"}));//(output) => [] As this needs to be mentioned array needs to be build based on keys or value
-
+// console.log(Array.from({name:"Aditya"}));//(output) => [] As this needs to be mentioned array needs to be build based on keys or value
+const obj = {name:"Aditya", age:22, city:"Pune"};
+// const keysArray = Object.keys(obj);
+// console.log(keysArray);
+// const valueArray = Object.values(obj);
+// console.log(valueArray);
 
 const score1 = 100
 const score2 = 200
 const score3 = 300
 
-console.log(Array.of(score1,score2,score3));
+// console.log(Array.of(score1,score2,score3));
