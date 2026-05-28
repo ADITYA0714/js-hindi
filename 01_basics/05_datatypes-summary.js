@@ -46,7 +46,7 @@ console.log(typeof myObj);
 console.log(typeof myArray);
 
 //++++++++++++++++++++++++ Memory Allocation ++++++++++++++++++++
-// stack(Primitive) and heap(Non-Primitive)
+// stack(Primitive) i.e pass by value and heap(Non-Primitive) i.e pass by reference 
 let username = "aditya0714"
 let usernameref = username
 usernameref = "swati0924"
