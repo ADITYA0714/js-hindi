@@ -24,15 +24,16 @@ function addTwoNumbers(number1, number2){
 
 
 
-
+//here the value passed in defination of a fn is called parameter
 function addTwoNumber(num1, num2){
-  console.log(num1+num2);
+  // console.log(num1+num2);
   //return num1+num2 (This is the way to get value being returned)
 }
 
-const result = addTwoNumber(4,5);
+const result = addTwoNumber(4,5);//output - undefined beacuse console kiya hai return nhi kiya hai koi value from fn
+// When we call a fn the value give is called argument
 
-console.log(result);//here it gives undefined as function only gives value if we return
+// console.log(result);//here it gives undefined as function only gives value if we return
 
 
 function calculateCartPrice(...num1){

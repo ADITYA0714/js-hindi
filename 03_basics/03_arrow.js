@@ -9,9 +9,9 @@ const user = {
     } 
 }
 //this simply refers to current context , in simple it can be understand as current value of variable
-user.welcomeMessage()
+// user.welcomeMessage()
 user.username = "sam";
-user.welcomeMessage()
+// user.welcomeMessage()
 
 // console.log(this);
 

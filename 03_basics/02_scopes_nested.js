@@ -2,9 +2,9 @@ function one(){
     const username = "aditya"
     function two(){
         const website = "youtube"
-        // console.log((username));
+        console.log(username);
     }
-    // console.log(website);outside the scope
+    // console.log(website);//outside the scope
 
     two();
 }
@@ -30,7 +30,7 @@ function addone(num){
 
 addone(5)
 
-//Alternate way to write functions
+//Alternate way to write functions - this is called expression
 const addTwo = function(num){
     return num+2
 }
