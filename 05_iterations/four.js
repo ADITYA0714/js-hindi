@@ -13,7 +13,8 @@ for (const key in myObject) {
 
 const myArray = [1,2,3,4,5];
 for (const key in myArray) {
-//    console.log(myArray[key])
+   console.log(myArray[key])
+//    console.log(key)// O/P:- 0 1 2 3 4(i.e index of array)
 }
 
 

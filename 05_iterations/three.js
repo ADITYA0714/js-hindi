@@ -1,4 +1,7 @@
 // for of 
+
+// ["","",""]
+// [{},{},{}]
 const arr = [1,2,3,4,5]
 
 for (const val of arr) {
@@ -19,7 +22,9 @@ map.set('FR', "France")
 map.set('IN', "India")
 
 // console.log(map)
+// console.log(typeof map); O/p -> Object
 
+//Here it will always return key value if we want either key or value simply use [key,value] and log whatever you want
 for (const [key,value] of map) {
    console.log(key,":-",value) 
 }

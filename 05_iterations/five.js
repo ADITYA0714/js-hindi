@@ -1,5 +1,6 @@
 const coding = ["js","ruby","python","cpp","java"]
 
+//here the fn is callback fn and thing about callback fn is that it do not have name
 coding.forEach(function (item){
     // console.log(item);
 })
@@ -16,9 +17,9 @@ function printMe(item){
 coding.forEach(printMe)
 
 
-// coding.forEach((item,index,arr)=>{
-//     console.log(item,index,arr);
-// })
+coding.forEach((item,index,arr)=>{
+    console.log(item,index,arr);
+})
 
 
 const myCoding = [
