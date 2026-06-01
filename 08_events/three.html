@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Chai aur JavaScript</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    // setInterval -> can also take third parameter as value anything you want to pass like string, number etc...
+    let greetInterval ;
+    document.querySelector('#start').addEventListener('click',()=>{
+        greetInterval = setInterval(function(){
+            console.log("Aditya Ji Hello");
+        },1000);
+    })
+    document.querySelector('#stop').addEventListener('click',()=>{
+        const stopGreet = clearInterval(greetInterval);
+    })
+</script>
+</html>

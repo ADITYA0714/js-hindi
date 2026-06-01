@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Chai aur code</h1>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    // setTimeOut, setInterval -> takes a fn, handle, refernce of fn all are bascially fn as first parameter and time interval as second parameter
+    // setTimeout(function(){
+    //     console.log("Aditya is learning JS")
+    // },2000)
+    // const greetAditya = function(){
+    //     console.log("Aditya is learning React")
+    // };
+    // setInterval(greetAditya,3000);
+
+    const changeHeader = function (){
+        document.querySelector('h1').innerHTML = "Best JS Series";
+    }
+    const changeMe = setTimeout(changeHeader, 4000);
+
+    // clearTimeout, clearInterval -> Both takes another setTimeOut or setInterval as parameter for reference
+
+    // clearTimeout(changeMe);
+    document.querySelector('#stop').addEventListener('click',()=>{
+        console.log("Clicked Button")
+        clearTimeout(changeMe);
+    })
+</script>
+</html>
