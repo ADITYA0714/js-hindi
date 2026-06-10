@@ -33,3 +33,18 @@ let isAuth = true
 
 // You don’t have to install anything — it’s already “under the hood” of your browser.
 
+// Variable is mutable but string is immutable in js
+
+let aa = "Aditya";
+aa = "b";
+console.log(aa); // "b" this is allowed be are creating a new string here
+
+// let aa = "Aditya";
+// aa[1] = "b";
+// console.log(aa); // "Aditya"// as here we trying to change the string not varibale
+
+const id1 = Symbol("123");
+const id2 = Symbol("123");
+console.log(id1 == id2);
+
+

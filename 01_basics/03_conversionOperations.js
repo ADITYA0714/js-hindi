@@ -62,3 +62,6 @@ console.log("1"+2)// 12
 
 // console.log(`a:${a}, b:${b}`);
 // Expected output: "a:4, b:4"
+
+
+console.log(typeof NaN)
