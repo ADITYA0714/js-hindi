@@ -1,6 +1,6 @@
 const clock = document.getElementById('clock');
 //const clock = document.querySelector('#clock');
-let localTime,lcTime;
+// let localTime,lcTime;
 
 setInterval(function refreshDate(){
     let date = new Date();

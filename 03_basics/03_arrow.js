@@ -50,9 +50,20 @@ const addTwo = (num1,num2)=> ({username : "aditya"})//way to return object impli
 
 console.log(addTwo(3,4))
 
-const myArray = [2,3,4,5,6]
+const myArray = [2,3,4,5,6];
 
 // myArray.forEach(function(){})
 // myArray.forEach(()=>{})
 // myArray.forEach(()=>())
 //above all are way to return array
+
+
+(function() {
+    let secret = "hidden";
+
+    console.log(secret);
+    function ram(){
+        console.log(secret);
+    }
+    ram();
+})();

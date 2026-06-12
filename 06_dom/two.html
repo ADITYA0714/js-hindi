@@ -8,18 +8,24 @@
 <body style="background-color: #212121; color: white;">
     <div class="parent">
         <div class="day">Monday</div>
-        <div class="day">Tuesday</div>
+        <div class="day">Tuesday <span> aditya</span></div>
         <div class="day">Wednesday</div>
         <div class="day">Thursday</div>
     </div>
 </body>
 <script>
+    // textContent - Includes hidden text.
+    // innerText - Only visible text.
+    // innerHTML - Returns HTML.
     const parent = document.querySelector('.parent')
     // console.log(parent);
     // console.log(parent.children);
     // console.log(parent.children[1]);
+    // console.log(parent.children[1].textContent);
     // console.log(parent.children[1].innerHTML);
-    
+    // console.log(parent.children[1].innerText);
+
+
     // for (let index = 0; index < parent.children.length; index++) {
     //     const element = parent.children[index].innerHTML;
     //     console.log(element);
@@ -30,9 +36,11 @@
     // console.log(parent.lastElementChild);
 
     const dayOne = document.querySelector('.day')
-    // console.log(dayOne);
-    // console.log(dayOne.parentElement);
-    // console.log(dayOne.nextElementSibling);
+    console.log(dayOne);
+    console.log(dayOne.parentElement);
+    console.log(dayOne.nextElementSibling);
+    console.log(dayOne.nextElementSibling.nextElementSibling);
+
 
     console.log("NODES: ",parent.childNodes);
 </script>
