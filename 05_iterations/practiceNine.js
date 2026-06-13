@@ -14,12 +14,12 @@ const books = [
 const bkReduce = books.reduce((bkTotal,currPage)=>{
     return bkTotal+currPage.pages;
 },0)
-console.log(bkReduce);
+// console.log(bkReduce);
 
 const bkEarliest = books.reduce((bkEarly,publish)=>{
     return Math.min(bkEarly, publish.publishYear);
 },Infinity);
-console.log(bkEarliest)
+// console.log(bkEarliest)
 
 const genreCnt = books.reduce((acc,bk)=>{
     if(!acc[bk.genre]){
@@ -28,17 +28,17 @@ const genreCnt = books.reduce((acc,bk)=>{
     acc[bk.genre]++;
     return acc;
 },{});
-console.log(genreCnt); 
+// console.log(genreCnt); 
 
 const longestBook = books.reduce((acc,bk)=>{
     return Math.max(acc, bk.pages);
 },Number.MIN_VALUE);
-console.log("Longest Book : "+longestBook);
+// console.log("Longest Book : "+longestBook);
 
 const avgPages = books.reduce((acc,bk)=>{
     return (acc + bk.pages);
 },0);
-console.log("Avg Pages : "+avgPages/books.length);
+// console.log("Avg Pages : "+avgPages/books.length);
 
 const titleComb = books.reduce((acc,bk)=>{
     return acc + (acc?", ":"")+bk.title;
@@ -50,7 +50,7 @@ const bkAfter = books.reduce((acc,bk)=>{
         acc++;
     return acc
 },0)
-console.log(bkAfter);
+// console.log(bkAfter);
 
 const sumOfPageByGenre = books.reduce((acc,bk)=>{
     if(!acc[bk.genre]){
@@ -59,9 +59,9 @@ const sumOfPageByGenre = books.reduce((acc,bk)=>{
     acc[bk.genre] += bk.pages;
     return acc
 },{})
-console.log(sumOfPageByGenre);
+// console.log(sumOfPageByGenre);
 
 const shortTitle = books.reduce((shortest,bk)=>{
     return bk.title.length < shortest.title.length ? bk : shortest;
 },books[0])
-console.log(shortTitle);
+// console.log(shortTitle);

@@ -14,8 +14,10 @@
     // setInterval -> can also take third parameter as value anything you want to pass like string, number etc...
     let greetInterval ;
     document.querySelector('#start').addEventListener('click',()=>{
+        let a = 1;
         greetInterval = setInterval(function(){
-            console.log("Aditya Ji Hello");
+            a++;
+            console.log(`Aditya Ji Hello , ${a}`);
         },1000);
     })
     document.querySelector('#stop').addEventListener('click',()=>{

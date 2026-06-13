@@ -2,7 +2,7 @@
 // 2. Function Execution Context 
 // 3. Eval Execution Context
 
-// Exectuion in js hhas two phase
+// Exectuion in js has two phase
 // {} -> Memory Creation Phase / Creation Phase
 //    -> Execution Phase
 
